@@ -14,7 +14,10 @@ python = ">=3.9,<3.11"
 numpy = "^1.25.1"
 matplotlib = "^3.7.2"
 pandas = "1.5.3"
-twinlab = { path = "../twinlab-library", develop = true }
+twinlab = { path = "../twinlab/library", develop = true }
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
 
 [build-system]
 requires = ["poetry-core"]
